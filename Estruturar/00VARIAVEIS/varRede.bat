@@ -1,4 +1,4 @@
-
+@ECHO OFF
 IF %vAmbienteLocal%==A04 (
           SET vMaquinaVLAN=LABORATORIO_CNC
           SET vMaquinaGateway=10.110.136.1
