@@ -1,3 +1,4 @@
+﻿@ECHO OFF
 curl -LJO https://alexstocco-senai.github.io/ConfiguracoesSENAI/Estruturar/02-Identificacao.bat
 curl -LJO https://alexstocco-senai.github.io/ConfiguracoesSENAI/Estruturar/03-Plano_de_Fundo.bat
 curl -LJO https://alexstocco-senai.github.io/ConfiguracoesSENAI/Estruturar/04-Conexao.bat
