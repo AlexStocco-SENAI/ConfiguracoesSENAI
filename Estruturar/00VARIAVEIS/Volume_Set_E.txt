@@ -1,0 +1,4 @@
+SELECT VOLUME 0 
+assign letter=E noerr 
+SELECT VOLUME 0 
+assign letter=E noerr 
