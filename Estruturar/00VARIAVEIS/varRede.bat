@@ -6,26 +6,26 @@ IF %vAmbienteLocal%==A04 (
           SET vMaquinaDNS1=10.190.254.2
           SET vMaquinaDNS2=10.190.254.3
           IF %vMaquinaIdentificacao%==00 SET vMaquinaIP=10.110.136.2
-          IF %vMaquinaIdentificacao%==01 SET vMaquinaIP=10.110.136.11
-          IF %vMaquinaIdentificacao%==02 SET vMaquinaIP=10.110.136.12
-          IF %vMaquinaIdentificacao%==03 SET vMaquinaIP=10.110.136.13
-          IF %vMaquinaIdentificacao%==04 SET vMaquinaIP=10.110.136.14
-          IF %vMaquinaIdentificacao%==05 SET vMaquinaIP=10.110.136.15
-          IF %vMaquinaIdentificacao%==06 SET vMaquinaIP=10.110.136.16
-          IF %vMaquinaIdentificacao%==07 SET vMaquinaIP=10.110.136.17
-          IF %vMaquinaIdentificacao%==08 SET vMaquinaIP=10.110.136.18
-          IF %vMaquinaIdentificacao%==09 SET vMaquinaIP=10.110.136.19
-          IF %vMaquinaIdentificacao%==10 SET vMaquinaIP=10.110.136.20
-          IF %vMaquinaIdentificacao%==11 SET vMaquinaIP=10.110.136.21
-          IF %vMaquinaIdentificacao%==12 SET vMaquinaIP=10.110.136.22
-          IF %vMaquinaIdentificacao%==13 SET vMaquinaIP=10.110.136.23
-          IF %vMaquinaIdentificacao%==14 SET vMaquinaIP=10.110.136.24
-          IF %vMaquinaIdentificacao%==15 SET vMaquinaIP=10.110.136.25
-          IF %vMaquinaIdentificacao%==16 SET vMaquinaIP=10.110.136.26
-          IF %vMaquinaIdentificacao%==17 SET vMaquinaIP=10.110.136.27
-          IF %vMaquinaIdentificacao%==18 SET vMaquinaIP=10.110.136.28
-          IF %vMaquinaIdentificacao%==19 SET vMaquinaIP=10.110.136.29
-          IF %vMaquinaIdentificacao%==20 SET vMaquinaIP=10.110.136.30
+          IF %vMaquinaIdentificacao%==01 SET vMaquinaIP=10.110.136.10
+          IF %vMaquinaIdentificacao%==02 SET vMaquinaIP=10.110.136.11
+          IF %vMaquinaIdentificacao%==03 SET vMaquinaIP=10.110.136.12
+          IF %vMaquinaIdentificacao%==04 SET vMaquinaIP=10.110.136.13
+          IF %vMaquinaIdentificacao%==05 SET vMaquinaIP=10.110.136.14
+          IF %vMaquinaIdentificacao%==06 SET vMaquinaIP=10.110.136.15
+          IF %vMaquinaIdentificacao%==07 SET vMaquinaIP=10.110.136.16
+          IF %vMaquinaIdentificacao%==08 SET vMaquinaIP=10.110.136.17
+          IF %vMaquinaIdentificacao%==09 SET vMaquinaIP=10.110.136.18
+          IF %vMaquinaIdentificacao%==10 SET vMaquinaIP=10.110.136.19
+          IF %vMaquinaIdentificacao%==11 SET vMaquinaIP=10.110.136.20
+          IF %vMaquinaIdentificacao%==12 SET vMaquinaIP=10.110.136.21
+          IF %vMaquinaIdentificacao%==13 SET vMaquinaIP=10.110.136.22
+          IF %vMaquinaIdentificacao%==14 SET vMaquinaIP=10.110.136.23
+          IF %vMaquinaIdentificacao%==15 SET vMaquinaIP=10.110.136.24
+          IF %vMaquinaIdentificacao%==16 SET vMaquinaIP=10.110.136.25
+          IF %vMaquinaIdentificacao%==17 SET vMaquinaIP=10.110.136.26
+          IF %vMaquinaIdentificacao%==18 SET vMaquinaIP=10.110.136.27
+          IF %vMaquinaIdentificacao%==19 SET vMaquinaIP=10.110.136.28
+          IF %vMaquinaIdentificacao%==20 SET vMaquinaIP=10.110.136.29
 )
 
 
@@ -65,26 +65,26 @@ IF %vAmbienteLocal%==AS05 (
           SET vMaquinaDNS1=10.190.254.2
           SET vMaquinaDNS2=10.190.254.3
           IF %vMaquinaIdentificacao%==00 SET vMaquinaIP=10.110.134.130
-          IF %vMaquinaIdentificacao%==01 SET vMaquinaIP=10.110.134.141
-          IF %vMaquinaIdentificacao%==02 SET vMaquinaIP=10.110.134.142
-          IF %vMaquinaIdentificacao%==03 SET vMaquinaIP=10.110.134.143
-          IF %vMaquinaIdentificacao%==04 SET vMaquinaIP=10.110.134.144
-          IF %vMaquinaIdentificacao%==05 SET vMaquinaIP=10.110.134.145
-          IF %vMaquinaIdentificacao%==06 SET vMaquinaIP=10.110.134.146
-          IF %vMaquinaIdentificacao%==07 SET vMaquinaIP=10.110.134.147
-          IF %vMaquinaIdentificacao%==08 SET vMaquinaIP=10.110.134.148
-          IF %vMaquinaIdentificacao%==09 SET vMaquinaIP=10.110.134.149
-          IF %vMaquinaIdentificacao%==10 SET vMaquinaIP=10.110.134.150
-          IF %vMaquinaIdentificacao%==11 SET vMaquinaIP=10.110.134.151
-          IF %vMaquinaIdentificacao%==12 SET vMaquinaIP=10.110.134.152
-          IF %vMaquinaIdentificacao%==13 SET vMaquinaIP=10.110.134.153
-          IF %vMaquinaIdentificacao%==14 SET vMaquinaIP=10.110.134.154
-          IF %vMaquinaIdentificacao%==15 SET vMaquinaIP=10.110.134.155
-          IF %vMaquinaIdentificacao%==16 SET vMaquinaIP=10.110.134.156
-          IF %vMaquinaIdentificacao%==17 SET vMaquinaIP=10.110.134.157
-          IF %vMaquinaIdentificacao%==18 SET vMaquinaIP=10.110.134.158
-          IF %vMaquinaIdentificacao%==19 SET vMaquinaIP=10.110.134.159
-          IF %vMaquinaIdentificacao%==20 SET vMaquinaIP=10.110.134.160
+          IF %vMaquinaIdentificacao%==01 SET vMaquinaIP=10.110.134.140
+          IF %vMaquinaIdentificacao%==02 SET vMaquinaIP=10.110.134.141
+          IF %vMaquinaIdentificacao%==03 SET vMaquinaIP=10.110.134.142
+          IF %vMaquinaIdentificacao%==04 SET vMaquinaIP=10.110.134.143
+          IF %vMaquinaIdentificacao%==05 SET vMaquinaIP=10.110.134.144
+          IF %vMaquinaIdentificacao%==06 SET vMaquinaIP=10.110.134.145
+          IF %vMaquinaIdentificacao%==07 SET vMaquinaIP=10.110.134.146
+          IF %vMaquinaIdentificacao%==08 SET vMaquinaIP=10.110.134.147
+          IF %vMaquinaIdentificacao%==09 SET vMaquinaIP=10.110.134.148
+          IF %vMaquinaIdentificacao%==10 SET vMaquinaIP=10.110.134.149
+          IF %vMaquinaIdentificacao%==11 SET vMaquinaIP=10.110.134.150
+          IF %vMaquinaIdentificacao%==12 SET vMaquinaIP=10.110.134.151
+          IF %vMaquinaIdentificacao%==13 SET vMaquinaIP=10.110.134.152
+          IF %vMaquinaIdentificacao%==14 SET vMaquinaIP=10.110.134.153
+          IF %vMaquinaIdentificacao%==15 SET vMaquinaIP=10.110.134.154
+          IF %vMaquinaIdentificacao%==16 SET vMaquinaIP=10.110.134.155
+          IF %vMaquinaIdentificacao%==17 SET vMaquinaIP=10.110.134.156
+          IF %vMaquinaIdentificacao%==18 SET vMaquinaIP=10.110.134.157
+          IF %vMaquinaIdentificacao%==19 SET vMaquinaIP=10.110.134.158
+          IF %vMaquinaIdentificacao%==20 SET vMaquinaIP=10.110.134.159
 )
 
 
