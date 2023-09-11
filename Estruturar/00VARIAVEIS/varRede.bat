@@ -62,8 +62,8 @@ IF %vAmbienteLocal%==AS05 (
           SET vMaquinaVLAN=LAB_INFORMATICA_2
           SET vMaquinaGateway=10.110.134.129
           SET vMaquinaMascara=255.255.255.128
-          SET vMaquinaDNS1=10.190.254.2
-          SET vMaquinaDNS2=10.190.254.3
+          SET vMaquinaDNS1=10.110.144.5
+          SET vMaquinaDNS2=10.110.144.6
           IF %vMaquinaIdentificacao%==00 SET vMaquinaIP=10.110.134.130
           IF %vMaquinaIdentificacao%==01 SET vMaquinaIP=10.110.134.140
           IF %vMaquinaIdentificacao%==02 SET vMaquinaIP=10.110.134.141
