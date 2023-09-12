@@ -1,4 +1,4 @@
-REM INICIA PROGRAMAS QUE NECESSITAM DE ATIVAÇÃO DAS LICENÇAS
+REM INICIA PROGRAMAS QUE NECESSITAM DE ATIVAÃ‡ÃƒO DAS LICENÃ‡AS
 
 IF "%vStart%"=="1" (
     ECHO ABRINDO PROGRAMAS
@@ -17,6 +17,7 @@ IF "%vStart%"=="1" (
 
     REM WORD
     start Winword.exe
+    echo NMMKJ-6RK4F-KMJVX-8D9MJ-6MWKP | clip
 
     REM INDUSOFT
     start " " "C:\Program Files (x86)\Indusoft Web Studio Educational v8.1\Bin\RunUniReg.exe"
