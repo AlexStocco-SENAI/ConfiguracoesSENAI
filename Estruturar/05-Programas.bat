@@ -17,7 +17,7 @@ IF "%vStart%"=="1" (
 
     REM WORD
     start Winword.exe
-    echo NMMKJ-6RK4F-KMJVX-8D9MJ-6MWKP | clip
+    echo NFY9X-KV6D4-RJJ83-T9QT8-D9P63 | clip
 
     REM INDUSOFT
     start " " "C:\Program Files (x86)\Indusoft Web Studio Educational v8.1\Bin\RunUniReg.exe"
