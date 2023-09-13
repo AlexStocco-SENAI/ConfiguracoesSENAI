@@ -1,3 +1,4 @@
+REM V3.10
 @ECHO OFF
 IF %vAmbienteLocal%==A04 (
           SET vMaquinaVLAN=LABORATORIO_CNC
