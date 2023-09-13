@@ -1,3 +1,4 @@
+REM V3.01
 echo off
 
 if "%vModoLanSchool%"=="1" (
