@@ -1,3 +1,4 @@
+REM V3.01
 ECHO "ALTERANDO PLANO DE FUNDO"
 
 copy "C:\Padronizacao\Midia\Planos de fundo\Plano de Fundo (%vMaquinaIdentificacao%).JPG" "C:\Padronizacao\Midia\Planos de fundo\Plano de Fundo.JPG" /y
