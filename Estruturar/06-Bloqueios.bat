@@ -1,3 +1,4 @@
+REM V3.01
 SET vModoBloqueio=%1
 
 if %vModoBloqueio%==1 (
