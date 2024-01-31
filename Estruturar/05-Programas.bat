@@ -21,11 +21,11 @@ IF "%vStart%"=="1" (
     echo NFY9XKV6D4RJJ83T9QT8D9P | clip
 
     REM INDUSOFT
-    start " " "C:\Program Files (x86)\Indusoft Web Studio Educational v8.1\Bin\RunUniReg.exe"
-    start " " "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" https://www.indusoft.com/license-activation-commercial
+    REM start " " "C:\Program Files (x86)\Indusoft Web Studio Educational v8.1\Bin\RunUniReg.exe"
+    REM start " " "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" https://www.indusoft.com/license-activation-commercial
 
     REM VISUAL STUDIO
-    start " " "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\devenv.exe"
+    REM start " " "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\devenv.exe"
 
     REM SSCNC
     start " " "C:\Nanjing Swansoft\SSCNC\CNCLogin.exe"
