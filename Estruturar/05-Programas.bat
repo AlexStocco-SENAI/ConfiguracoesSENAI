@@ -36,4 +36,7 @@ IF "%vStart%"=="1" (
     REM PRONEST
     start " " "C:\Program Files\Hypertherm CAM\ProNest 2023\ProNest.exe"
 
+    REM TIA Portal
+    start " " "C:\Program Files\Siemens\Automation\Automation License Manager\almapp\almapp64x.exe"
+
 )
