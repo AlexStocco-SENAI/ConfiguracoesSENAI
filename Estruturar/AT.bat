@@ -7,3 +7,4 @@
 @curl -LJO https://alexstocco-senai.github.io/ConfiguracoesSENAI/Estruturar/06-Bloqueios.bat > nul 2>&1
 @curl -LJO https://alexstocco-senai.github.io/ConfiguracoesSENAI/Estruturar/07-LanSchool.bat > nul 2>&1
 @curl -LJO https://alexstocco-senai.github.io/ConfiguracoesSENAI/Estruturar/08-Particao.bat > nul 2>&1
+@curl -LJO https://alexstocco-senai.github.io/ConfiguracoesSENAI/Estruturar/POAT.bat > nul 2>&1
