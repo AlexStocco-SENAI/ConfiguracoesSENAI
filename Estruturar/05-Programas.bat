@@ -5,19 +5,19 @@ IF "%vStart%"=="1" (
     ECHO ABRINDO PROGRAMAS
 
     REM AUTOCAD 2024
-    set "program=C:\Arquivos de Programas\Autodesk\AutoCAD 2024\acad.exe" 
-    if exist "%program%" (
-        start "" "%program%" > nul 2>&1
+    set "program1=C:\Arquivos de Programas\Autodesk\AutoCAD 2024\acad.exe" 
+    if exist "%program1%" (
+        start "" "%program1%" > nul 2>&1
     )
 
     REM INVENTOR 2024
-    set "program=C:\Arquivos de Programas\Autodesk\Inventor 2024\Bin\Inventor.exe"
-    if exist "%program%" (
-        start "" "%program%"  /language=ENU > nul 2>&1
+    set "program2=C:\Arquivos de Programas\Autodesk\Inventor 2024\Bin\Inventor.exe"
+    if exist "%program2%" (
+        start "" "%program2%"  /language=ENU > nul 2>&1
     )
 
     REM REVIT 2024
-    set "program=C:\Arquivos de Programas\Autodesk\Revit 2024\Revit.exe" /language ENU
+    set "program=C:\Arquivos de Programas\Autodesk\Revit 2024\Revit.exe"
     if exist "%program%" (
         start "" "%program%"  /language ENU > nul 2>&1
     )
@@ -33,9 +33,9 @@ IF "%vStart%"=="1" (
     echo NFY9XKV6D4RJJ83T9QT8D9P | clip
 
     REM INDUSOFT
-    set "program=C:\Program Files (x86)\Indusoft Web Studio Educational v8.1\Bin\RunUniReg.exe"
-    if exist "%program%" (
-        start "" "%program%" > nul 2>&1
+    set "program3=C:\Program Files (x86)\Indusoft Web Studio Educational v8.1\Bin\RunUniReg.exe"
+    if exist "%program3%" (
+        start "" "%program3%" > nul 2>&1
         start " " "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" https://www.indusoft.com/license-activation-commercial  > nul 2>&1
     )
     
