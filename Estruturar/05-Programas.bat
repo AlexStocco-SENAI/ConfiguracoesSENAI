@@ -8,7 +8,7 @@ REM INICIA PROGRAMAS QUE NECESSITAM DE ATIVAÇÃO DAS LICENÇAS
     set "program1=C:\Arquivos de Programas\Autodesk\AutoCAD 2024\acad.exe" 
 IF "%vStart%"=="1" (
     if exist "%program1%" (
-        start "" "%program1%" > nul 2>&1
+        start "" "%program1%"
     )
 )
 
@@ -16,7 +16,7 @@ IF "%vStart%"=="1" (
     set "program2=C:\Arquivos de Programas\Autodesk\Inventor 2024\Bin\Inventor.exe"
 IF "%vStart%"=="1" (
     if exist "%program2%" (
-        start "" "%program2%"  /language=ENU > nul 2>&1
+        start "" "%program2%"  /language=ENU
     )
 )
 
@@ -24,7 +24,7 @@ IF "%vStart%"=="1" (
     set "program=C:\Arquivos de Programas\Autodesk\Revit 2024\Revit.exe"
 IF "%vStart%"=="1" (
     if exist "%program%" (
-        start "" "%program%"  /language ENU > nul 2>&1
+        start "" "%program%"  /language ENU
     )
 )
 
@@ -32,7 +32,7 @@ IF "%vStart%"=="1" (
     set "program=C:\Program Files\Autodesk\webdeploy\production\6a0c9611291d45bb9226980209917c3d\FusionLauncher.exe"
 IF "%vStart%"=="1" (
     if exist "%program%" (
-        start "" "%program%" > nul 2>&1
+        start "" "%program%"
     )
 )
 
@@ -46,8 +46,8 @@ IF "%vStart%"=="1" (
     set "program3=C:\Program Files (x86)\Indusoft Web Studio Educational v8.1\Bin\RunUniReg.exe"
 IF "%vStart%"=="1" (
     if exist "%program3%" (
-        start "" "%program3%" > nul 2>&1
-        start " " "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" https://www.indusoft.com/license-activation-commercial  > nul 2>&1
+        start "" "%program3%"
+        start " " "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" https://www.indusoft.com/license-activation-commercial
     )
 )
     
@@ -56,7 +56,7 @@ IF "%vStart%"=="1" (
     set "program=C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\devenv.exe"
 IF "%vStart%"=="1" (
     if exist "%program%" (
-        start "" "%program%" > nul 2>&1
+        start "" "%program%"
     )
 )
 
@@ -64,7 +64,7 @@ IF "%vStart%"=="1" (
     set "program=C:\Nanjing Swansoft\SSCNC\CNCLogin.exe"
 IF "%vStart%"=="1" (
     if exist "%program%" (
-        start "" "%program%" > nul 2>&1
+        start "" "%program%"
     )
 )
 
@@ -72,7 +72,7 @@ IF "%vStart%"=="1" (
     set "program=C:\Program Files\Hexagon\EDGECAM 2022.1\cam\Launcher.exe"
 IF "%vStart%"=="1" (
     if exist "%program%" (
-        start "" "%program%" > nul 2>&1
+        start "" "%program%"
     )
 )
 
@@ -80,7 +80,7 @@ IF "%vStart%"=="1" (
     set "program=C:\Program Files\Hypertherm CAM\ProNest 2023\ProNest.exe" 
 IF "%vStart%"=="1" (
     if exist "%program%" (
-        start "" "%program%" > nul 2>&1
+        start "" "%program%"
     )
 )
 
@@ -88,6 +88,6 @@ IF "%vStart%"=="1" (
     set "program=C:\Program Files\Siemens\Automation\Automation License Manager\almapp\almapp64x.exe"
 IF "%vStart%"=="1" (
     if exist "%program%" (
-        start "" "%program%" > nul 2>&1
+        start "" "%program%"
     )
 )
