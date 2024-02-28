@@ -13,6 +13,8 @@ set "github_file_url=https://alexstocco-senai.github.io/ConfiguracoesSENAI/Estru
 @curl -LJO "%github_file_url%" > nul 2>&1
 set "github_file_url=https://alexstocco-senai.github.io/ConfiguracoesSENAI/Estruturar/00VARIAVEIS/ATVAR.bat"
 @curl -LJO "%github_file_url%" > nul 2>&1
+set "github_file_url=https://alexstocco-senai.github.io/ConfiguracoesSENAI/Estruturar/00VARIAVEIS/ATPO.bat"
+@curl -LJO "%github_file_url%" > nul 2>&1
 move ATVAR.bat "%vCaminho%\00VARIAVEIS\ATVAR.bat"
 CALL "AT.bat"
 runas.exe /profile /savedcred /USER:Master "\"%vCaminho%\ATADMIN.bat\" %vCaminho%"
