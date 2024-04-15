@@ -83,7 +83,7 @@ IF NOT %vModoBloqueio%==0 runas.exe /profile /savedcred /USER:Master "\"%vCaminh
 
 IF NOT %vModoParticao%==0 CALL "08-Particao.bat"
 
-timeout /t 5 >nul
+timeout /t 25 >nul
 CALL "ATPO.bat"
 
 set /p vReiniciar=Deseja reiniciar? (0-NAO)
