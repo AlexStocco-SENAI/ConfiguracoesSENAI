@@ -110,3 +110,11 @@ REM TIA Portal
             start "" "%program%"
         )
     )
+
+REM FluidSim
+    set "program=C:\Program Files (x86)\Didactic\FluidSIM6\bin\FluidSIM6.exe"
+    IF "%vStart%"=="1" (
+        if exist "%program%" (
+            start "" "%program%"
+        )
+    )
