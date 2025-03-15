@@ -1,7 +1,7 @@
 REM V3.1
 @ECHO OFF
 chcp 65001
-runas.exe /profile /savedcred /USER:Master CALL
+runas.exe /profile /savedcred /USER:.\Master CALL
 
 REM PASTA ONDE ESTÁ LOCALIZADO OS SCRIPTS
 SET vCaminho="C:\Padronizacao\Scripts\Estruturar"
