@@ -66,7 +66,8 @@ REM INDUSOFT
     IF "%vStart%"=="1" (
         if exist "%program3%" (
             start "" "%program3%"
-            start " " "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" https://www.indusoft.com/license-activation-commercial
+            REM start " " "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" https://www.indusoft.com/license-activation-commercial
+            start " " "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" https://om.aveva.com/InduSoftActivation/
         )
     )
     
