@@ -4,10 +4,10 @@ IF %vAmbienteLocal%==A04 (
           SET vMaquinaVLAN=LABORATORIO_CNC
           SET vMaquinaGateway=10.110.136.1
           SET vMaquinaMascara=255.255.255.128
-          SET vMaquinaDNS1=10.110.144.5
-          SET vMaquinaDNS2=10.110.144.6
-          SET vMaquinaDNS3=10.190.240.78
-          SET vMaquinaDNS4=10.190.240.79
+          SET vMaquinaDNS3=10.110.144.5
+          SET vMaquinaDNS4=10.110.144.6
+          SET vMaquinaDNS1=10.190.240.78
+          SET vMaquinaDNS2=10.190.240.79
           IF %vMaquinaIdentificacao%==00 SET vMaquinaIP=10.110.136.2
           IF %vMaquinaIdentificacao%==01 SET vMaquinaIP=10.110.136.10
           IF %vMaquinaIdentificacao%==02 SET vMaquinaIP=10.110.136.11
@@ -36,10 +36,10 @@ IF %vAmbienteLocal%==AS03 (
           SET vMaquinaVLAN=LABORATORIO_CNC
           SET vMaquinaGateway=10.110.136.1
           SET vMaquinaMascara=255.255.255.128
-          SET vMaquinaDNS1=10.110.144.5
-          SET vMaquinaDNS2=10.110.144.6
-          SET vMaquinaDNS3=10.190.240.78
-          SET vMaquinaDNS4=10.190.240.79
+          SET vMaquinaDNS3=10.110.144.5
+          SET vMaquinaDNS4=10.110.144.6
+          SET vMaquinaDNS1=10.190.240.78
+          SET vMaquinaDNS2=10.190.240.79
           IF %vMaquinaIdentificacao%==00 SET vMaquinaIP=10.110.136.3
           IF %vMaquinaIdentificacao%==01 SET vMaquinaIP=10.110.136.41
           IF %vMaquinaIdentificacao%==02 SET vMaquinaIP=10.110.136.42
