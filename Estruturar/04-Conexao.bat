@@ -20,9 +20,21 @@ IF "%vModoConexao%"=="1" (
     )
 
 IF "%vModoConexao%"=="2" (
-    powershell -Command "Start-Process netsh -ArgumentList 'interface ip set address \"%vMaquinaConexao%\" static %vMaquinaIP% %vMaquinaMascara% %vMaquinaGateway%' -Verb RunAs "
-    powershell -Command "Start-Process netsh -ArgumentList 'interface ipv4 set dns \"%vMaquinaConexao%\" static %vMaquinaDNS1% primary no' -Verb RunAs "
-    powershell -Command "Start-Process netsh -ArgumentList 'interface ipv4 add dns \"%vMaquinaConexao%\" %vMaquinaDNS2% index=2 no' -Verb RunAs "
+    IF NOT "%vMaquinaDNS1%"=="" (
+        powershell -Command "Start-Process netsh -ArgumentList 'interface ipv4 set dns \"%vMaquinaConexao%\" static %vMaquinaDNS1% primary no' -Verb RunAs "
+    )
+
+    IF NOT "%vMaquinaDNS2%"=="" (
+        powershell -Command "Start-Process netsh -ArgumentList 'interface ipv4 add dns \"%vMaquinaConexao%\" %vMaquinaDNS2% index=2 no' -Verb RunAs "
+    )
+
+    IF NOT "%vMaquinaDNS3%"=="" (
+        powershell -Command "Start-Process netsh -ArgumentList 'interface ipv4 add dns \"%vMaquinaConexao%\" %vMaquinaDNS3% index=3 no' -Verb RunAs "
+    )
+
+    IF NOT "%vMaquinaDNS4%"=="" (
+        powershell -Command "Start-Process netsh -ArgumentList 'interface ipv4 add dns \"%vMaquinaConexao%\" %vMaquinaDNS4% index=4 no' -Verb RunAs "
+    )
     )
 
 ipconfig /release 
