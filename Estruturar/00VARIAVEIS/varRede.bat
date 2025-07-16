@@ -9,7 +9,7 @@ SET vMaquinaDNS2=10.190.240.79
 IF %vAmbienteLocal%==A04 (
           SET vMaquinaVLAN=LABORATORIO_CNC
           SET vMaquinaGateway=10.110.136.1
-          SET vMaquinaMascara=255.255.255.128
+          SET vMaquinaMascara=255.255.255.192
           REM SET vMaquinaDNS1=10.110.144.5
           REM SET vMaquinaDNS2=10.110.144.6
           REM SET vMaquinaDNS3=10.190.240.78
@@ -41,7 +41,7 @@ IF %vAmbienteLocal%==A04 (
 IF %vAmbienteLocal%==AS03 (
           SET vMaquinaVLAN=LABORATORIO_CNC
           SET vMaquinaGateway=10.110.136.1
-          SET vMaquinaMascara=255.255.255.128
+          SET vMaquinaMascara=255.255.255.192
           REM SET vMaquinaDNS1=10.110.144.5
           REM SET vMaquinaDNS2=10.110.144.6
           REM SET vMaquinaDNS3=10.190.240.78
