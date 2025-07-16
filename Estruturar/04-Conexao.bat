@@ -9,6 +9,7 @@ CD "%vCaminho%"
 CALL "00VARIAVEIS\varGeral.bat"
 CALL "00VARIAVEIS\varAmbiente.bat"
 CALL "00VARIAVEIS\varMaquina.bat"
+CALL "00VARIAVEIS\varRede.bat"
 
 powershell -Command "Start-Process netsh -ArgumentList 'INT IP RESET all" dhcp' -Verb RunAs "
 powershell -Command "Start-Process netsh -ArgumentList 'winsock reset all" dhcp' -Verb RunAs "
