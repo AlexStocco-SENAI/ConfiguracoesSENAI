@@ -20,6 +20,9 @@ IF "%vModoConexao%"=="1" (
     )
 
 IF "%vModoConexao%"=="2" (
+
+    powershell -Command "Start-Process netsh -ArgumentList 'interface ip set address \"%vMaquinaConexao%\" static %vMaquinaIP% %vMaquinaMascara% %vMaquinaGateway%' -Verb RunAs "
+
     IF NOT "%vMaquinaDNS1%"=="" (
         powershell -Command "Start-Process netsh -ArgumentList 'interface ipv4 set dns \"%vMaquinaConexao%\" static %vMaquinaDNS1% primary no' -Verb RunAs "
     )
