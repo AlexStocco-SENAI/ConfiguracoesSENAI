@@ -1,7 +1,7 @@
 ﻿@ECHO OFF
 
 REM Detecta versão do Windows (10 ou 11)
-for /f "tokens=2 delims==" %%A in ('wmic os get BuildNumber /value ^| find "="') do set BUILD=%%A
+for /f "tokens=2 delims==" %A in ('wmic os get BuildNumber /value ^| find "="') do set BUILD=%A
 
 if %BUILD% GEQ 22000 (
     set WINVER=W11
