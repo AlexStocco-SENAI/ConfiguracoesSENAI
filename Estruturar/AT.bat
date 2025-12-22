@@ -15,7 +15,7 @@ if !BUILD! GEQ 22000 (
 
 echo Windows detectado: %WINVER%
 
-set "BASE_URL=https://alexstocco-senai.github.io/ConfiguracoesSENAI/%WINVER%/Estruturar"
+set "BASE_URL=https://alexstocco-senai.github.io/ConfiguracoesSENAI/%WINVER%"
 
 curl -LJO "%BASE_URL%/00-INICIO.bat" >nul 2>&1
 curl -LJO "%BASE_URL%/02-Identificacao.bat" >nul 2>&1
