@@ -5,7 +5,7 @@ ECHO --- SETANDO VARIAVEIS DE AMBIENTE ---
 CALL "varAmbiente.bat"
 SET /p "vAmbienteLocal=Qual o local da sala (ATUAL:%vAmbienteLocal%):"
 SET /p "vAmbienteSigla=Qual a sigla da sala (ATUAL:%vAmbienteSigla%):"
-SET /p "vAmbienteLanSchool=Qual o código do lanschool (ATUAL:%vAmbienteLanSchool%):"
+SET /p "vAmbienteLanSchool=Qual o cÃ³digo do lanschool (ATUAL:%vAmbienteLanSchool%):"
 
 DEL varAmbiente.bat
 

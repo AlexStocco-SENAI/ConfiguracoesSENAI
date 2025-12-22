@@ -3,7 +3,7 @@ REM V3.1
 chcp 65001
 runas.exe /profile /savedcred /USER:Master CALL
 
-REM PASTA ONDE EST¡ LOCALIZADO OS SCRIPTS
+REM PASTA ONDE EST√Å LOCALIZADO OS SCRIPTS
 SET vCaminho="C:\Padronizacao\Scripts\Estruturar"
 CD "%vCaminho%"
 setlocal enabledelayedexpansion
@@ -26,7 +26,7 @@ CLS
 
 ECHO "SCRIPT DE PADRONIZACAO DE COMPUTADOR
 set vModoVariaveis=0
-set /p vModoVariaveis=Deseja reconfigurar as informaÁıes da m·quina?(0-NAO 1-SIM)
+set /p vModoVariaveis=Deseja reconfigurar as informa√ß√µes da m√°quina?(0-NAO 1-SIM)
 if %vModoVariaveis%==1 (
 	CD 00VARIAVEIS
 	CALL "setVariaveis.bat"
@@ -53,7 +53,7 @@ REM set /p vModoDisco=Deseja alterar as letras dos discos? (0-NAO 1-SIM)
 Echo --- Plano de fundo ---
 set /p vModoPlano=Deseja alterar o plano de fundo? (0-NAO 1-SIM)
 Echo --- Programas ---
-set /p vStart=Deseja iniciar os programas padrıes para verificacao de licenca? (0-NAO 1-SIM)
+set /p vStart=Deseja iniciar os programas padr√µes para verificacao de licenca? (0-NAO 1-SIM)
 Echo --- Bloqueio ---
 set /p vModoBloqueio=Deseja bloquear NETSH e WSCRIPT? (0-PULA 1-BLOQUEIA 2-DESBLOQUEIA)
 Echo --- Particoes ---
@@ -63,7 +63,7 @@ set /p vModoParticao=Deseja configurar as particoes? (0-NAO 1-SIM)
    set vModoParticaoPadrao=0
    if %vModoParticaoD%==1 set /p vModoParticaoPadrao=Qual sera a particao do usuario? (0-C: 1-D:)
        set vModoParticaoUpdate=0
-   if %vModoParticaoPadrao%==1 set /p vModoParticaoUpdate=Deseja atualizar a pasta usu·rio de D:? (0-NAO 1-SIM)
+   if %vModoParticaoPadrao%==1 set /p vModoParticaoUpdate=Deseja atualizar a pasta usu√°rio de D:? (0-NAO 1-SIM)
 
 IF %vModoVariaveis%==1 CALL "02-Identificacao"
 
