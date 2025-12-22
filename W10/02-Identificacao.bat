@@ -11,9 +11,9 @@ REM ALTERA O NOME DO USUARIO
 net user Senai /fullname:"%vMaquinaUsuario%"
 
 REM ALTERA O NOME DO ATALHO DOCUMENTOS CONTIDO NO MENU INICIAR
-REM del "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Atalhos\*.*" /q
-REM copy "C:\Padronizacao\Atalhos\Usuario.lnk" "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Atalhos\Usuario.lnk" /y
-REM rename "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Atalhos\Usuario.lnk" "%vMaquinaUsuario%.lnk"
+del "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Atalhos\*.*" /q
+copy "C:\Padronizacao\Atalhos\Usuario.lnk" "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Atalhos\Usuario.lnk" /y
+rename "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Atalhos\Usuario.lnk" "%vMaquinaUsuario%.lnk"
 
 REM ALTERA O CANAL DO LANSCHOOL
 "C:\Program Files (x86)\LanSchool\Utilities\SetChannel.exe" %vAmbienteLanSchool%

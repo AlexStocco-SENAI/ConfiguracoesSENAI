@@ -1,2 +1,2 @@
-SET vGeralNomePrefixo=ECFP603D
+SET vGeralNomePrefixo=ESN603D
 SET vGeralDominio=Educ603

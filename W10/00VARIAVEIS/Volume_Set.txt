@@ -1,2 +1,2 @@
 SELECT VOLUME 1 
-assign letter=D noerr 
+remove noerr 
