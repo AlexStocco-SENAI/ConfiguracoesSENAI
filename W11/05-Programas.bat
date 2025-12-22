@@ -58,8 +58,9 @@ REM FUSION
 REM WORD
     IF "%vStart%"=="1" (
         start Winword.exe
-        echo NFY9XKV6D4RJJ83T9QT8D9P | clip
+        echo laboratorio_cfp603@senaisp.edu.br | clip
     )
+
 
 REM INDUSOFT
     set "program3=C:\Program Files (x86)\Indusoft Web Studio Educational v8.1\Bin\RunUniReg.exe"
