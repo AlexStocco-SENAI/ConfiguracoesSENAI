@@ -4,7 +4,7 @@ REM INICIA PROGRAMAS QUE NECESSITAM DE ATIVAÇÃO DAS LICENÇAS
 
 ECHO ABRINDO PROGRAMAS
 
-REM AUTOCAD 2024
+REM AUTOCAD
     set "program1=C:\Arquivos de Programas\Autodesk\AutoCAD 2024\acad.exe" 
     IF "%vStart%"=="1" (
         if exist "%program1%" (
@@ -18,7 +18,20 @@ REM AUTOCAD 2024
         )
     )
 
-REM INVENTOR 2024
+    set "program1=C:\Arquivos de Programas\Autodesk\AutoCAD 2026\acad.exe" 
+    IF "%vStart%"=="1" (
+        if exist "%program1%" (
+            start "" "%program1%"
+        )
+    )
+
+REM INVENTOR
+    set "program2=C:\Arquivos de Programas\Autodesk\Inventor 2026\Bin\Inventor.exe"
+    IF "%vStart%"=="1" (
+        if exist "%program2%" (
+            start "" "%program2%"  /language=ENU
+        )
+    )
     set "program2=C:\Arquivos de Programas\Autodesk\Inventor 2024\Bin\Inventor.exe"
     IF "%vStart%"=="1" (
         if exist "%program2%" (
@@ -32,7 +45,13 @@ REM INVENTOR 2024
         )
     )
 
-REM REVIT 2024
+REM REVIT
+    set "program=C:\Arquivos de Programas\Autodesk\Revit 2026\Revit.exe"
+    IF "%vStart%"=="1" (
+        if exist "%program%" (
+            start "" "%program%"  /language ENU
+        )
+    )
     set "program=C:\Arquivos de Programas\Autodesk\Revit 2024\Revit.exe"
     IF "%vStart%"=="1" (
         if exist "%program%" (
