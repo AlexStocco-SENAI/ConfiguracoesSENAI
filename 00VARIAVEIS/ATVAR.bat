@@ -1,11 +1,13 @@
-﻿@ECHO OFF
+﻿@echo off
+setlocal EnableDelayedExpansion
 
-@ECHO OFF
+REM Detecta a build do Windows usando PowerShell
+for /f %%A in ('powershell -command "(Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion').CurrentBuild"') do (
+    set BUILD=%%A
+)
 
-REM Detecta versão do Windows (10 ou 11)
-for /f "tokens=2 delims==" %A in ('wmic os get BuildNumber /value ^| find "="') do set BUILD=%A
-
-if %BUILD% GEQ 22000 (
+REM Define versão do Windows
+if !BUILD! GEQ 22000 (
     set WINVER=W11
 ) else (
     set WINVER=W10
