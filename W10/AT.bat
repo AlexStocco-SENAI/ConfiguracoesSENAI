@@ -1,4 +1,4 @@
-﻿@ECHO OFF
+@ECHO OFF
 @curl -LJO https://alexstocco-senai.github.io/ConfiguracoesSENAI/Estruturar/00-INICIO.bat > nul 2>&1
 @curl -LJO https://alexstocco-senai.github.io/ConfiguracoesSENAI/Estruturar/02-Identificacao.bat > nul 2>&1
 @curl -LJO https://alexstocco-senai.github.io/ConfiguracoesSENAI/Estruturar/03-Plano_de_Fundo.bat > nul 2>&1
