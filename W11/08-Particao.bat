@@ -1,5 +1,5 @@
 REM V3.01
-REM ALTERANDO PARTIÃ‡Ã•ES
+REM ALTERANDO PARTIÇÕES
 REM SET vCaminho=%1
 REM SET vModoParticao=%2
 REM SET vModoParticaoD=%3
