@@ -43,8 +43,11 @@ set vModoParticaoLimpa=0
 set vModoBloqueio=0
 set vModoParticaoD=2
 set vModoParticaoPadrao=2
+set vModoIntune=0
 
 
+Echo --- Intune ---
+set /p vModoIntune=Iniciar processo para ativação do Intune? (0-NAO 1-SIM)
 Echo --- LanSchool ---
 set /p vModoLanSchool=Deseja habilitar o LanSchool? (0-PULA 1-HABILITA 2-DESABILITA)
 Echo --- Rede ---
@@ -69,6 +72,8 @@ IF %vModoVariaveis%==1 CALL "02-Identificacao"
 
 IF NOT %vModoLanSchool%==0 CALL "07-LanSchool.bat"
 
+IF NOT %vModoIntune%==0 runas.exe /profile /savedcred /USER:Master "\"%vCaminho%\09-Ativacao_Intune.bat\" "
+
 CALL "05-Programas"
 
 IF NOT %vModoConexao%==0 runas.exe /profile /savedcred /USER:Master "\"%vCaminho%\04-Conexao.bat\" %vCaminho% %vModoConexao%"
@@ -82,6 +87,8 @@ IF NOT %vModoBloqueio%==0 runas.exe /profile /savedcred /USER:Master "\"%vCaminh
 
 
 IF NOT %vModoParticao%==0 CALL "08-Particao.bat"
+
+
 
 timeout /t 25 >nul
 CALL "ATPO.bat"

@@ -12,7 +12,7 @@ if %errorlevel%==0 (
 
 REM HABILITANDO ATUALIZAÇÃO
 
-"C:\Program Files\NoVirusThanks\Win Update Stop\WinUpdateStop.exe"  /enableupdates
+"C:\Padronizacao\0MANUTENCAO\Wub\Wub_x64.exe /E"  /enableupdates
 
 
 echo ================================
