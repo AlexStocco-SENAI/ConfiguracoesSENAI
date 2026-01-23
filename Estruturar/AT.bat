@@ -8,7 +8,7 @@ for /f %%A in ('powershell -command "(Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft
 
 REM Define versão do Windows
 if !BUILD! GEQ 22000 (
-    set WINVER=W11
+    set WINVER=W11_2
 ) else (
     set WINVER=W10
 )
@@ -29,3 +29,4 @@ curl -LJO "%BASE_URL%/08-Particao.bat" >nul 2>&1
 if %WINVER%==W11 (
 curl -LJO "%BASE_URL%/09-Ativacao_Intune.bat" >nul 2>&1
 )
+
