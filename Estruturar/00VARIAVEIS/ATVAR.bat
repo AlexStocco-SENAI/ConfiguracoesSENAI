@@ -20,4 +20,8 @@ set "BASE_URL=https://alexstocco-senai.github.io/ConfiguracoesSENAI/%WINVER%"
 @curl -LJO "%BASE_URL%/00VARIAVEIS/varRede.bat" > nul 2>&1
 move varRede.bat "%vCaminho%\00VARIAVEIS\varRede.bat"
 
+@curl -LJO "%BASE_URL%/00VARIAVEIS/varGeral.bat" > nul 2>&1
+move varRede.bat "%vCaminho%\00VARIAVEIS\varGeral.bat"
+
+
 
