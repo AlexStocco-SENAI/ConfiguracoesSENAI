@@ -4,7 +4,7 @@ ECHO "ALTERANDO PLANO DE FUNDO"
 
 
 copy "C:\Padronizacao\Midia\Planos de fundo\Plano de Fundo (%vMaquinaIdentificacao%).JPG" "C:\Padronizacao\Midia\Planos de fundo\Plano de Fundo.JPG" /y
-copy "C:\Padronizacao\Midia\Planos de fundo\Plano de Fundo.JPG" "C:\Windows\Web\Wallpaper\Windows\img0.jpg" /y
+REM copy "C:\Padronizacao\Midia\Planos de fundo\Plano de Fundo.JPG" "C:\Windows\Web\Wallpaper\Windows\img0.jpg" /y
 
 set "WALLPAPER=C:\Padronizacao\Midia\Planos de fundo\Plano de Fundo.JPG"
 
@@ -16,4 +16,5 @@ if not exist "%WALLPAPER%" (
 
 REM Define o papel de parede via PowerShell (método correto)
 powershell -NoProfile -ExecutionPolicy Bypass -Command "Set-ItemProperty 'HKCU:\Control Panel\Desktop' -Name Wallpaper -Value '%WALLPAPER%'; rundll32.exe user32.dll,UpdatePerUserSystemParameters 1, True"
+
 
