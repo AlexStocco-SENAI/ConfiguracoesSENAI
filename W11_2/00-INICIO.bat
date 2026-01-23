@@ -90,11 +90,12 @@ IF NOT %vModoParticao%==0 CALL "08-Particao.bat"
 
 
 
-timeout /t 25 >nul
+timeout /t 120 >nul
 CALL "ATPO.bat"
 
 set /p vReiniciar=Deseja reiniciar? (0-NAO)
 IF "%vReiniciar%"=="1" (SHUTDOWN -R -T 0)
 IF "%vReiniciar%"=="" (SHUTDOWN -R -T 0)
+
 
 
