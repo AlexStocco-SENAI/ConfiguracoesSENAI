@@ -1,17 +1,20 @@
 REM V3.01
 ECHO "ALTERANDO PLANO DE FUNDO"
 
+
+
 copy "C:\Padronizacao\Midia\Planos de fundo\Plano de Fundo (%vMaquinaIdentificacao%).JPG" "C:\Padronizacao\Midia\Planos de fundo\Plano de Fundo.JPG" /y
 copy "C:\Padronizacao\Midia\Planos de fundo\Plano de Fundo.JPG" "C:\Windows\Web\Wallpaper\Windows\img0.jpg" /y
-RUNDLL32.EXE user32.dll,UpdatePerUserSystemParameters
 
+set "WALLPAPER=C:\Padronizacao\Midia\Planos de fundo\Plano de Fundo.JPG"
 
-REM Loop para atualizar o plano de fundo
-set x=1
-:while
-if %x% leq 2005 (
-RUNDLL32.EXE USER32.DLL,UpdatePerUserSystemParameters 1, True
-set /a "x = x + 1"
-goto :while
+REM Verifica se o arquivo existe
+if not exist "%WALLPAPER%" (
+    echo ERRO: Arquivo de plano de fundo não encontrado.
+    exit /b 1
 )
-goto end
+
+REM Define o papel de parede via PowerShell (método correto)
+powershell -NoProfile -ExecutionPolicy Bypass -Command ^
+"Set-ItemProperty 'HKCU:\Control Panel\Desktop' -Name Wallpaper -Value '%WALLPAPER%'; ^
+rundll32.exe user32.dll,UpdatePerUserSystemParameters 1, True"
