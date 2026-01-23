@@ -26,7 +26,8 @@ curl -LJO "%BASE_URL%/06-Bloqueios.bat" >nul 2>&1
 curl -LJO "%BASE_URL%/07-LanSchool.bat" >nul 2>&1
 curl -LJO "%BASE_URL%/08-Particao.bat" >nul 2>&1
 
-if %WINVER%==W11 (
+if %WINVER%==W11_2 (
 curl -LJO "%BASE_URL%/09-Ativacao_Intune.bat" >nul 2>&1
 )
+
 
