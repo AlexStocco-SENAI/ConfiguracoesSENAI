@@ -8,7 +8,7 @@ REM copy "C:\Padronizacao\Midia\Planos de fundo\Plano de Fundo.JPG" "C:\Windows\
 
 set "BASE_URL=https://alexstocco-senai.github.io/ConfiguracoesSENAI/%WINVER%"
 
-curl -L https://alexstocco-senai.github.io/ConfiguracoesSENAI/W11_2/SENAI.theme" -o "C:\Windows\Resources\Themes\SENAI.theme"
+curl -L "https://alexstocco-senai.github.io/ConfiguracoesSENAI/W11_2/SENAI.theme" -o "C:\Windows\Resources\Themes\SENAI.theme"
 
 start "" "C:\Windows\Resources\Themes\SENAI.theme"
 
@@ -22,6 +22,7 @@ if not exist "%WALLPAPER%" (
 
 REM Define o papel de parede via PowerShell (método correto)
 powershell -NoProfile -ExecutionPolicy Bypass -Command "Set-ItemProperty 'HKCU:\Control Panel\Desktop' -Name Wallpaper -Value '%WALLPAPER%'; rundll32.exe user32.dll,UpdatePerUserSystemParameters 1, True"
+
 
 
 
