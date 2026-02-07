@@ -43,6 +43,7 @@ REM ===============================
 REM PROGRAMAS ESPECIAIS
 REM ===============================
 
+echo CONFIGURACOES | clip
 
 REM WORD
 start Winword.exe
@@ -50,7 +51,7 @@ echo laboratorio_cfp603@senaisp.edu.br | clip
 
 
 REM FLUIDSIM
-set "fluidsim="C:\Program Files (x86)\Didactic\FluidSIM6\bin\FluidSIM6.exe""
+set "fluidsim=C:\Program Files (x86)\Didactic\FluidSIM6\bin\FluidSIM6.exe"
 if exist "%fluidsim%" (
     echo %vAmbienteSigla%_%vMaquinaIdentificacao% | clip
     start "" "%fluidsim%"
@@ -64,6 +65,7 @@ if exist "%indusoft%" (
     start "" "%indusoft%"
     start "" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" https://om.aveva.com/InduSoftActivation/
 )
+
 
 
 
