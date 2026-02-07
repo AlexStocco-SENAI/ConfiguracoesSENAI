@@ -23,6 +23,17 @@ move varRede.bat "%vCaminho%\00VARIAVEIS\varRede.bat"
 @curl -LJO "%BASE_URL%/00VARIAVEIS/varGeral.bat" > nul 2>&1
 move varGeral.bat "%vCaminho%\00VARIAVEIS\varGeral.bat"
 
+set /p vModoPadrao=Copiar variaveis padronizadas? (0-NAO 1-SIM)
+
+if %vModoPadrao%==1 (
+@curl -LJO "%BASE_URL%/00VARIAVEIS/varAmbiente.bat" > nul 2>&1
+move varGeral.bat "%vCaminho%\00VARIAVEIS\varAmbiente.bat"
+
+@curl -LJO "%BASE_URL%/00VARIAVEIS/varMaquina.bat" > nul 2>&1
+move varGeral.bat "%vCaminho%\00VARIAVEIS\varMaquina.bat"
+)
+
+
 
 
 
