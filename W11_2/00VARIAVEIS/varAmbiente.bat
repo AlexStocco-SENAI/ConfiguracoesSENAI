@@ -1,3 +1,3 @@
-SET "vAmbienteLocal=BS05"
-SET "vAmbienteSigla=LABTI"
-SET "vAmbienteLanSchool=2105"
+SET "vAmbienteLocal=AS08"
+SET "vAmbienteSigla=HID"
+SET "vAmbienteLanSchool=1108"
