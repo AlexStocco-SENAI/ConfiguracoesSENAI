@@ -3,8 +3,12 @@ REM V3.06
 
 IF NOT "%vStart%"=="1" GOTO :EOF
 
+CALL "00VARIAVEIS\varAmbiente.bat"
+CALL "00VARIAVEIS\varMaquina.bat"
+
 ECHO ABRINDO PROGRAMAS
 
+echo %vAmbienteSigla%_%vMaquinaIdentificacao% | clip
 echo bJR4vC | clip
 
 REM ===============================
@@ -51,6 +55,7 @@ if exist "%indusoft%" (
     start "" "%indusoft%"
     start "" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" https://om.aveva.com/InduSoftActivation/
 )
+
 
 
 
