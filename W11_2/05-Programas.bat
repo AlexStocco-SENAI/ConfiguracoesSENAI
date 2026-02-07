@@ -8,8 +8,6 @@ CALL "C:\Padronizacao\Scripts\Estruturar\00VARIAVEIS\varMaquina.bat"
 
 ECHO ABRINDO PROGRAMAS
 
-echo %vAmbienteSigla%_%vMaquinaIdentificacao% | clip
-echo bJR4vC | clip
 
 REM ===============================
 REM LISTA DE PROGRAMAS
@@ -33,7 +31,7 @@ for %%P in (
     "C:\Program Files\Hexagon\EDGECAM 2022.1\cam\Launcher.exe"
     "C:\Program Files\Hypertherm CAM\ProNest 2023\ProNest.exe"
     "C:\Program Files\Siemens\Automation\Automation License Manager\almapp\almapp64x.exe"
-    "C:\Program Files (x86)\Didactic\FluidSIM6\bin\FluidSIM6.exe"
+    
 ) do (
     if exist "%%~P" (
         echo Abrindo %%~P
@@ -45,9 +43,20 @@ REM ===============================
 REM PROGRAMAS ESPECIAIS
 REM ===============================
 
+
 REM WORD
 start Winword.exe
 echo laboratorio_cfp603@senaisp.edu.br | clip
+
+
+REM FLUIDSIM
+set "fluidsim="C:\Program Files (x86)\Didactic\FluidSIM6\bin\FluidSIM6.exe""
+if exist "%fluidsim%" (
+    echo %vAmbienteSigla%_%vMaquinaIdentificacao% | clip
+    start "" "%fluidsim%"
+    echo bJR4vC | clip
+)
+
 
 REM INDUSOFT
 set "indusoft=C:\Program Files (x86)\Indusoft Web Studio Educational v8.1\Bin\RunUniReg.exe"
@@ -55,6 +64,7 @@ if exist "%indusoft%" (
     start "" "%indusoft%"
     start "" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" https://om.aveva.com/InduSoftActivation/
 )
+
 
 
 
