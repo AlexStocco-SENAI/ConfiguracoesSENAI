@@ -4,7 +4,7 @@ ECHO "ALTERANDO PLANO DE FUNDO"
 
 
 copy "C:\Padronizacao\Midia\Planos de fundo\Plano de Fundo (%vMaquinaIdentificacao%).JPG" "C:\Padronizacao\Midia\Planos de fundo\Plano de Fundo.JPG" /y
-REM copy "C:\Padronizacao\Midia\Planos de fundo\Plano de Fundo.JPG" "C:\Windows\Web\Wallpaper\Windows\img0.jpg" /y
+copy "C:\Padronizacao\Midia\Planos de fundo\Plano de Fundo.JPG" "C:\Users\SENAI\AppData\Roaming\Microsoft\Windows\Themes\TranscodedWallpaper" /y
 
 set "BASE_URL=https://alexstocco-senai.github.io/ConfiguracoesSENAI/%WINVER%"
 
@@ -22,6 +22,7 @@ if not exist "%WALLPAPER%" (
 
 REM Define o papel de parede via PowerShell (método correto)
 powershell -NoProfile -ExecutionPolicy Bypass -Command "Set-ItemProperty 'HKCU:\Control Panel\Desktop' -Name Wallpaper -Value '%WALLPAPER%'; rundll32.exe user32.dll,UpdatePerUserSystemParameters 1, True"
+
 
 
 
