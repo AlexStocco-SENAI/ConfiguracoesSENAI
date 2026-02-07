@@ -43,11 +43,11 @@ REM ===============================
 REM PROGRAMAS ESPECIAIS
 REM ===============================
 
-echo CONFIGURACOES | clip
+echo laboratorio_cfp603@senaisp.edu.br | clip
 
 REM WORD
 start Winword.exe
-echo laboratorio_cfp603@senaisp.edu.br | clip
+echo '           ' | clip
 
 
 REM FLUIDSIM
@@ -65,6 +65,7 @@ if exist "%indusoft%" (
     start "" "%indusoft%"
     start "" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" https://om.aveva.com/InduSoftActivation/
 )
+
 
 
 
